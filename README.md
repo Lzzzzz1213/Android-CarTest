@@ -6,5 +6,5 @@
 以下演示图片：
 ![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E9%A6%96%E7%95%8C%E9%9D%A2.jpg)
 ![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%871.jpg)
-![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%9C%89%E5%9B%BE%E6%AD%A3%E7%A1%AE.jpg)
-![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%97%A0%E5%9B%BE%E9%94%99%E8%AF%AF.jpg)
+![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%872.jpg)
+![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%873.jpg)
