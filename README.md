@@ -24,4 +24,5 @@
 ![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg)
 ![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%871.jpg)
 ![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%872.jpg)
-![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%873.jpg)
+![](https://github.com/Lzzzzz1213/Android-CarTest/blob/master/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%873.jpg)   
+(3)安装包已经放在项目当中！
