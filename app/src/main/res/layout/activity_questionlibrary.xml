@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuestionLibraryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:gravity="top|left"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="367dp"
+            android:layout_height="137dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/radioLayout">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+                <RadioButton
+                    android:id="@+id/radioButton_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选项正在加载中……"
+                    android:onClick="Check"
+                    android:enabled="false"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选项正在加载中……"
+                    android:onClick="Check"
+                    android:enabled="false"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选项正在加载中……"
+                    android:onClick="Check"
+                    android:enabled="false"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选项正在加载中……"
+                    tools:layout_editor_absoluteX="33dp"
+                    tools:layout_editor_absoluteY="278dp"
+                    android:onClick="Check"
+                    android:enabled="false"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:id="@+id/multipleLayout"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/checkButton_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MultipleChoice"
+                android:text="A." />
+
+            <CheckBox
+                android:id="@+id/checkButton_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MultipleChoice"
+                android:text="B." />
+
+            <CheckBox
+                android:id="@+id/checkButton_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MultipleChoice"
+                android:text="C." />
+
+            <CheckBox
+                android:id="@+id/checkButton_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MultipleChoice"
+                android:text="D." />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lastAndNextButton"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/lastButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="上一题"
+                android:layout_marginLeft="60dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="下一题"
+                android:layout_marginRight="60dp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/explainLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/explanation"
+            android:text="解析：因为少时诵诗书所因为少时诵诗书所因为少时诵诗书所因为少时诵诗书所因为少时诵诗书所" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

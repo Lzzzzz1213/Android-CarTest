@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:id="@+id/subject"
+        >
+        <RadioButton
+            android:id="@+id/subject_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="科目1"
+            android:layout_marginRight="40dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/subject_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="科目4" />
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/model">
+        <RadioButton
+            android:id="@+id/A1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1" />
+        <RadioButton
+            android:id="@+id/A2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A2" />
+        <RadioButton
+            android:id="@+id/B1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B1" />
+        <RadioButton
+            android:id="@+id/B2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B2" />
+        <RadioButton
+            android:id="@+id/C1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C1"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/C2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_special_disease_circle_blue"
+        android:text="顺序练习"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/randButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_special_disease_circle_green"
+        android:text="随机练习"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</LinearLayout>
